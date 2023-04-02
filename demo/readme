@@ -1,1 +1,46 @@
-gcp concepts
+detailed step-by-step guide to creating a 3-tier application on GCP using Terraform:
+
+Step 1: Set up your GCP project and service account
+
+Go to the GCP Console and create a new project.
+Create a new service account with the necessary roles and permissions to create resources.
+Download the service account key and save it in a secure location.
+Step 2: Set up your Terraform configuration
+
+Install Terraform on your local machine.
+Create a new Terraform configuration file (e.g. main.tf) and initialize it with the necessary provider configuration.
+Step 3: Create a VPC network
+
+Define a new VPC network in your Terraform configuration.
+Specify the IP range and any other necessary settings.
+Create the VPC network using the "terraform apply" command.
+Step 4: Create a subnet
+
+Define a new subnet in your Terraform configuration.
+Specify the IP range and associate it with the VPC network you created in the previous step.
+Create the subnet using the "terraform apply" command.
+Step 5: Create a load balancer
+
+Define a new load balancer in your Terraform configuration.
+Specify the backend services and health checks.
+Create the load balancer using the "terraform apply" command.
+Step 6: Create your compute resources
+
+Define your frontend, backend, and database instances in your Terraform configuration.
+Specify the necessary machine type, image, and other settings.
+Create the instances using the "terraform apply" command.
+Step 7: Configure your application (frontend, backend, database)
+
+Configure your frontend instance to serve your application content.
+Configure your backend instance to communicate with your frontend and database instances.
+Configure your database instance to store and retrieve your application data.
+Step 8: Deploy your application
+
+Deploy your application to your frontend and backend instances.
+Verify that your application is working properly.
+That's a basic overview of the steps involved in creating a 3-tier application on GCP using Terraform. Keep in mind that there may be additional configuration steps depending on the specific requirements of your application.
+
+
+
+
+
