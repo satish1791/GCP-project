@@ -57,17 +57,14 @@ resource "google_compute_http_health_check" "frontend-health-check" {
 }
 
 
-Specify the forwarding rules for the load balancer
+// Specify the forwarding rules for the load balancer
 
-Associate the load balancer with your subnet
-
-
-Step 6: Create your compute resources
+// Associate the load balancer with your subnet
 
 
+// Step 6: Create your compute resources
 
-Define a new instance group for your frontend servers:
-
+// Define a new instance group for your frontend servers:
 
 resource "google_compute_instance_template" "frontend-template" {
   name = "frontend-template"
@@ -98,8 +95,7 @@ resource "google_compute_instance_group" "frontend-group" {
 }
 
   
-For backend instance template:
-
+// For backend instance template:
 
 resource "google_compute_instance_template" "backend-template" {
   name_prefix = "backend-template-"
@@ -119,7 +115,7 @@ resource "google_compute_instance_template" "backend-template" {
   tags = ["backend"]
 }
 
-//For database instance template:
+// For database instance template:
 
 resource "google_compute_instance_template" "database-template" {
   name_prefix = "database-template-"
